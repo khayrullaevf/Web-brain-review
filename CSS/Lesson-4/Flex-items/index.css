@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 100px;
+    margin: 10px;
+    
+}
+
+.item-1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    flex-grow: 3;
+}
+.item-2{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    flex-grow: 1;
+  
+}
+.item-3{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    /* flex-basis: 600px; */
+    flex-grow: 2;
+}
+
+/* 1920/6=320 */
+
+/* 320*3 =960px box1 */
+/* 320*1=320px box2 */
+/*320*640px box3 */
+
+
+/* Flex-items */
+/* Flex-basis=width bilan bir xil */
+/* Flex-grow =qolib ketgan joyni taqsimlab oladi */
+/* flex-direction:column holatida flex-grow iwlamaydi */
+/* align-self= flex itemni uzini centerga olib kelib  beradi */
+/* Flex-shrink=>flex-growning teskarisi */

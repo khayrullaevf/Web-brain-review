@@ -1,0 +1,61 @@
+
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+div{
+    margin: 300px;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    border-radius: 50%;
+    transition: all 2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+
+
+}
+
+
+div:hover{
+    background-color: green;
+  transform: scale(2);
+}
+
+div>h1:hover::after{
+    content: 'Fuck You!!!';
+    color: blue;
+    font-family: cursive;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+
+
+
+/* transition-delay=> tranistion ni nech sekunddan keyin  boshlamishi  */
+/* transition-timing-function=> qanaqa tezlikka boshlanib qachon   */
+/* linear=>default, bir tekis */
+/* ease-in-out=>sekin-tez-sekin */
+/* ease-out=>tez-sekin */
+/* cubic-beziee=>uzimiz control qilamiz */
+
+/* animation 2ta turga bolinadi */
+/* 1-tur=>from to */
+/* 2-tur=>timing */
+
+

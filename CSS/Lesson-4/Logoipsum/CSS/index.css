@@ -1,0 +1,521 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yeon+Sung&display=swap');
+
+/* Navbar Section Styles */
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    width: 199.48px;
+    height: 39.22px;
+}
+.navbar-items{
+    display: flex;
+
+}
+.navbar-item{
+margin: 0 25px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height */
+
+letter-spacing: -0.468947px;
+
+color: #696871;
+cursor: pointer;
+}
+ .navbar-item:hover{
+    color: #19191B;
+
+
+ }
+ 
+.navbar-item1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    margin: 0 25px;
+
+    
+    letter-spacing: -0.468947px;
+    
+    color: #19191B;
+    }
+    .blur{
+      width: 41px;
+      height: 2px;
+      background: #5454D4;
+      margin-top: 10px;
+       
+    }
+
+    .navbar-button{
+    background: #FF7143;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+
+    color: #FFFFFF;
+    width: 211px;
+    height: 60px;
+    cursor: pointer;
+
+    }
+    .navbar-button:hover{
+    background: #e4430d;
+
+
+    }
+
+
+    /* Hero Section */
+
+
+    .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .hero-title{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+line-height: 77px;
+/* or 96% */
+
+letter-spacing: -2.50105px;
+
+color: #19191B;
+margin-bottom: 30px;
+    }
+
+    .hero-description{
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+letter-spacing: -0.625263px;
+
+color: #696871;
+
+    }
+
+    .hero-footer{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+   
+    }
+
+
+    .hero-icon{
+        background: url(../images/Oval.svg);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .hero-button{
+  width: 211px;
+  height: 60px;
+  background: #5454D4;
+  border-radius: 10px;
+  
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 22px;
+text-align: center;
+letter-spacing: -0.531474px;
+
+color: #FFFFFF;
+outline: none;
+text-decoration: none;
+border: none;
+cursor: pointer;
+
+
+
+    }
+
+    .hero-button:hover{
+        background-color: #5656b2;
+    }
+
+    /*    Logos Section Styles */
+
+    .logos{
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo{
+        width: 126.72px;
+        height:29.54px;
+    }
+
+    /* Subscribtion Section  */
+    .subscribtion{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-img img{
+        height: 473px;
+        width: 348.5px;
+        border-radius: 0px;
+
+    }
+
+    .sub-info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .sub-title{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 57px;
+        /* identical to box height, or 114% */
+        
+        letter-spacing: -1.56316px;
+        
+        color: #19191B; 
+    }
+
+    .sub-para{
+        
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+margin-top: 30px;
+
+letter-spacing: -0.625263px;
+
+color: #696871;
+    }
+
+    .learn-more{
+    
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 22px;
+letter-spacing: -0.531474px;
+
+color: #5454D4;
+margin-top: 30px;
+cursor: pointer;
+  
+    }
+
+    .learn-more:hover{
+        color: #181878;
+
+    }
+
+    /* In-depth Section Styles */
+
+    .in-depth{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+.in-depth__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 158px;
+}
+
+.in-depth__title{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 57px;
+/* identical to box height, or 114% */
+
+letter-spacing: -1.56316px;
+
+color: #19191B;
+}
+.in-depth__desc{
+ margin-top: 30px;
+    
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+letter-spacing: -0.625263px;
+
+color: #696871;
+
+}
+
+
+/* Cards */
+
+.cards{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.card img{
+    height: 64px;
+    width: 114px;
+    border-radius: 0px;
+     
+}
+
+.card-title{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height, or 150% */
+
+text-align: center;
+letter-spacing: -0.750316px;
+
+color: #19191B;
+margin-top: 7px;
+
+}
+
+.card-des{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    text-align: center;
+    letter-spacing: -0.500211px;
+    
+    color: #696871;
+    margin-top: 20px;
+}
+
+/* Pricing Section */
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.pricing-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing-header__title{
+    
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 70px;
+/* or 117% */
+
+letter-spacing: -1.87579px;
+
+color: #19191B;
+}
+
+
+.pricing-heeader__buttons{
+    display: flex;
+    align-items: center;
+}
+.pricing-header__button{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.500211px;
+
+color: #FFFFFF;
+
+background: #5454D4;
+border-radius: 10px 0px 0px 10px;
+height: 55px;
+width: 160px;
+border: none;
+/* margin-left: 20px; */
+margin-right: 15px;
+
+
+
+}
+.pricing-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pricing-card{
+margin-top: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 441px;
+width: 330px;
+left: 0px;
+top: 0px;
+border-radius: 10px;
+background: #F8F8F8;
+
+
+}
+.pricing-card:hover{
+    background: grey;
+}
+.pricing-card2{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 441px;
+    width: 330px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    background: #F8F8F8;
+    background: #FF7143;
+
+
+    
+}    
+.pricing-card2:hover{
+    background: #9f320e;
+
+
+}
+.pricing-para{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+text-align: center;
+letter-spacing: -0.562737px;
+
+color: #696871;
+margin-top: 30px;
+
+}
+.pricing-title{
+    
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 56px;
+/* identical to box height, or 93% */
+
+text-align: center;
+letter-spacing: -1.03448px;
+
+color: #1D293F;
+}
+
+.pricing-button{
+ height: 60px;
+width: 285px;
+border-radius: 10px;
+background: linear-gradient(0deg, #EAE9F2, #EAE9F2),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+background: #FFFFFF;
+border: 1px solid #EAE9F2;
+border-radius: 10px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 22px;
+text-align: center;
+letter-spacing: -0.531474px;
+
+color: #5454D4;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+
+
+}

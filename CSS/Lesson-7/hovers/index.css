@@ -1,0 +1,74 @@
+
+
+
+.box{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+    color: white;
+    font-size: 25px;
+    transition: ease-in-out 2s;
+    padding: 20px;
+}
+
+.box:hover{
+    background-color: green;
+    color: red;
+    font-size: 30px;
+    transform: scale(3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 300px;
+
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px #db9797;
+}
+
+div>h1{
+    display: none;
+}
+
+.box:hover h2{
+    display: none;
+}
+.box:active h1{
+    display: block;
+}
+
+
+
+
+
+input{
+    margin: 200px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:focus{
+    border: 1px solid red;
+}
+
+p::first-letter{
+    font-size: 35px;
+    color: red;
+}
+
+::selection{
+    background-color: aqua;
+}
+/* Active=> mishkani bosib turganda iwlaydi */
+/* hover=> miska borganda iwlaydi */
+/* focus=> inputlarda ishlaydi va bir marta bosib turganda keyin tawqariga chiqsa ham focus qilib turadi */
+/* selection=> ektsni copy qilmoqchi bolsak style berish */

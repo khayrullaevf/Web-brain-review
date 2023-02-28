@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    padding: 150px;
+    margin: 200px;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: brown;
+    padding: 100px;
+    border-top: 5px solid green;
+    border-bottom: 10px solid white;
+    border-left: 10px dashed  black;
+    border-right: 5px dotted coral;
+}
+
+/* Border */
+/* border=> 3ta qiymat oladi qalingi turi rangi */
+/* turi => double , solid , dashed , none , hidden */
+/* border-width, border-style, border-color */
+/* border-radius =>50% bolsa aylana qilib beradi*/
+/*  agar 4ta qiymat qabul qilsa =>tepa-o'ng , past-chap  */
+/* agar 2ta qiymat bersak=>burchaklarga parallel ta'sir qiladi */
+
+
+
+/* margin=> borderdan boshqa elementlargacha bolgan masofa , 1 ta qiymatda 4ta tarafga ham ,2tada yuqori-past, o'ng-chap */
+/* padding=> contentdan bordergacha bulgan masofa */
+/* 4talik=>top-right-bottom-left */

@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.ani{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: ani;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin: 10px;
+   
+
+}
+@keyframes ani{
+  
+    0%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 50px;
+    }
+     25%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 300px;
+        top: 10px;
+     }
+     50%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 600px;
+        bottom: 1000px;
+     }
+     75%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 900px;
+        top: 10px;
+     }
+     100%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 1200px;
+        bottom: 1000px;
+     }
+}

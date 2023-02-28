@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+body{
+   background-color: aliceblue;
+}
+.link1{
+    color: chartreuse;
+    text-decoration:none ;
+    cursor: pointer;
+    animation-name: link;
+    animation-duration: 4s;
+}
+.link1:hover{
+    background-color: aqua;
+    font-size: 30px;
+    font-weight: 20px;
+}
+.link1:active{
+    background-color: red;
+    font-size: 30px;
+    font-weight: 20px;
+}
+@keyframes link {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+.title{
+    
+
+    outline: none;
+    text-decoration: none;
+    border: none;
+
+    margin: 100px;
+
+}
+.stars{
+
+    margin: 100px;
+  
+
+}
+.star{
+    background-color: yellow;
+    margin-top: 5px;
+}
+.ani{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: ani;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin: 10px;
+   
+
+}
+
+@keyframes ani{
+  
+    0%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 50px;
+    }
+     25%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 300px;
+        top: 10px;
+     }
+     50%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 600px;
+        bottom: 10px;
+     }
+     75%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 900px;
+        top: 10px;
+     }
+     100%{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        left: 1200px;
+        bottom: 10px;
+     }
+}
