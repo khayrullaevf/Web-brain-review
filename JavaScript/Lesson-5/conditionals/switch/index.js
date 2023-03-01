@@ -31,3 +31,6 @@ switch (day) {
 }
 
 
+
+day==4? console.log('yes'):console.log('no');
+
