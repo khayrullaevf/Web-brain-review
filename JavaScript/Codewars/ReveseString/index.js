@@ -25,9 +25,10 @@
 
 
 // var str='FazLiDiN';
-var news='';
+
 
 function names(str) {
+    var news='';
     for (let i = 0; i < str.length; i++) {
     
         // console.log(str[i],str[i].toUpperCase());
