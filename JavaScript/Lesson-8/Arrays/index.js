@@ -34,3 +34,5 @@ console.log(arr.sort((a,b)=>b-a));  // teskari sort
 console.log(arr.sort((a,b)=>a-b)); //sorting bigger numbers
 
 
+console.log(arr.join(''));
+
