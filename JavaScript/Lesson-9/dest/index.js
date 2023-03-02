@@ -4,5 +4,5 @@
 
 var arr =['nexia' ,'cobalt', 'malibu'];
 
-var [n,c,m]=arr;
-console.log(n);
+var [ a, b, m]=arr;
+console.log(a );
