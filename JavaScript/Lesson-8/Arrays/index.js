@@ -29,7 +29,7 @@ console.log(lastLetter);
 
 
 let arr=[1,2,3,2,8,2,9,4,100,56] ; 
-console.log(arr.sort((a,b)=>b-a)); 
+console.log(arr.sort((a,b)=>b-a));  // teskari sort
 
 
 
