@@ -48,5 +48,17 @@
 //    console.log( 'for :' +arr);
 // }
 
+let nums='241241' //14
+
+var arr=nums.split('');
+console.log(arr.reduce((total,initial)=>total+ +initial, 0));
+
+// var total=0;
 
 
+// for (let i = 0; i < nums.length; i++) {
+//      total+=+nums[i]
+    
+// }
+
+// console.log(total); 
