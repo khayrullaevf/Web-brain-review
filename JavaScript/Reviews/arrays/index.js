@@ -10,9 +10,32 @@ var me =[17,null,'Khayrullaev', false , true, undefined, 'Fazliddin'];
 // console.log(me);
 let nums=[87,89,3,44,56,23,43,23,32,66,77,12,13,51,]
 
+// console.log(nums.reduce((a,b)=>b+ +a,0));
+
+
 
 
 let fruits=['olma','nok','behi' ,'limon','olma','gilos' , 'olma']
+
+var [o,n,b,l,o,g,o]=fruits;
+
+// console.log(b);
+
+// console.log(fruits.length);
+// var str1='Fazliddin';
+// var str2='Fazliddin';
+ 
+// str1==str2;
+// console.log(str1==str2);
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,3 +201,9 @@ let students=['Fazliddin','Rayhona','Shamsiddin'];
 // console.log( typeof str.join('')); //arrayni stringga utkaizib beradi string qaytaradi
 
 
+
+
+
+var l='me';
+var t='me';
+console.log(l==t);
