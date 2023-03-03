@@ -71,12 +71,51 @@
 
 
 
-let obj={
-    name:'Fazliddin',
-    surname:'Khayrullaev',
-    addnew:function(){
-        console.log("FUCK YOU!!!");
-    }
-}
+// let obj={
+//     name:'Fazliddin',
+//     surname:'Khayrullaev',
+//     addnew:function(your_name,your_surname){
+//         console.log("What's your name?  -->  " +your_name +' '+your_surname);
+//         console.log(this.name);
+//     }
+// }
 
-obj.addnew();
+// obj.addnew('Fazliddin','Khayrullaev');
+// obj.addnew('Fazliddin','Khayrullaev');
+// obj.addnew('Fazliddin','Khayrullaev');
+
+// console.log(this);
+
+
+
+// var hero={
+//     name:'Simba',
+//     realName:'Lion'
+// }
+
+// var name=hero.name;
+// var realName=hero.realName;
+
+
+// const {name,realName , surname=['joker']}=hero;
+// console.log(name);
+// console.log(realName);
+// console.log(surname);
+
+//Destructuring array da , xohlagan nomdagi variable dan foydalana olamiz , object da faqat key orqali destructure qilamiz
+
+
+const arr=[
+    {id:1,name:'Abror' , status:'Mentor'},
+    {id:2,name:'Fazliddin', status:'IT'},
+    {id:3,name:'Rayhona' , status:'CEFR'},
+    {id:4,name:'Shahobiddin'  , status:'Game'},
+    {id:5,name:'Shamsiddin' , status:'Football'},
+]
+
+
+const names=arr.map(({id,name,status})=>{
+    console.log(id+ ' ) ' +name + ' --> ' + status);
+   
+   
+})
