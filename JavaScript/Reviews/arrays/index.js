@@ -3,8 +3,48 @@
 
 
 var me =[17,null,'Khayrullaev', false , true, undefined, 'Fazliddin'];
+// me.splice(1,0,'Barca')
+// me.splice(3,0,'Fulhem')
+// me.splice(4,0,'Totenham')
+// me.splice(5,0,'Udinize')
+// console.log(me);
+
+let myArr=me.filter((v,i,a)=>{
+    console.log(a);
 
 
+})
+
+
+
+
+
+
+ var newArr=me.map((value,index,array)=>{
+
+    // console.log(value);
+
+return 'I love you!' //update
+
+
+}
+
+)
+
+// console.log(newArr);
+
+
+//  me.forEach((v,i,a)=>{
+
+//     console.log(v);
+//     // return 'hello'
+
+
+// })
+// console.log(fore);
+//value=str[i]
+//index=i;
+//array=str
 
 // console.log( typeof me[3]); boolean;
 let lastword=me[me.length-1];
@@ -38,6 +78,19 @@ let str2=['me']
 
 
 let students=['Fazliddin','Rayhona','Shamsiddin'];
+
+
+
+
+
+
+//  students.unshift("MEENIIE");
+//  students.shift()
+//  students.shift()
+//  students.shift()
+//  console.log(students);
+
+
 //  students.push("SEN",'MEN');  oxiridan 2ta item qushib beradi;
 //  students.pop() //oxiridan  1ta item olib tashlaydi
 //  students.pop() // oxiridan  1ta item olib tashlaydi
