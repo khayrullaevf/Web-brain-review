@@ -8,12 +8,59 @@ var me =[17,null,'Khayrullaev', false , true, undefined, 'Fazliddin'];
 // me.splice(4,0,'Totenham')
 // me.splice(5,0,'Udinize')
 // console.log(me);
-
-let myArr=me.filter((v,i,a)=>{
-    console.log(a);
+let nums=[87,89,3,44,56,23,43,23,32,66,77,12,13,51,]
 
 
-})
+
+let fruits=['olma','nok','behi' ,'limon','olma','gilos' , 'olma']
+
+
+
+
+
+
+
+
+
+
+
+
+// let sortedFriuts=fruits.filter((v,i,a)=>{
+
+//     return i==1
+
+
+
+
+// })
+
+// console.log(sortedFriuts);
+// let myArr=nums.filter((v,i,a)=>
+
+// v<50
+
+
+// )
+// console.log(myArr);
+
+
+
+
+
+
+// let myArr=nums.filter((v,i,a)=>{
+//     if (v>50&&v<70) {
+    
+//      return v
+     
+//     } else{
+//      return false
+//     }
+     
+ 
+//  })
+ 
+//  console.log(myArr);
 
 
 
