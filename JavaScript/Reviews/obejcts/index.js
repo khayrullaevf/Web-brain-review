@@ -32,15 +32,15 @@
 
 
 
-const students=[
+// const students=[
 
-{id:1,name:'Fazliddin' , work:'IT' ,age:19},
-{id:2,name:'Messi' , work:'GOAT' ,age:35},
-{id:3,name:'Lewa' , work:'Mr GOAL' ,age:34},
-{id:4,name:'Xavi' , work:'Boss' ,age:42},
-{id:5,name:'Busquetos' , work:'Mr Vision',age:35},
+// {id:1,name:'Fazliddin' , work:'IT' ,age:19},
+// {id:2,name:'Messi' , work:'GOAT' ,age:35},
+// {id:3,name:'Lewa' , work:'Mr GOAL' ,age:34},
+// {id:4,name:'Xavi' , work:'Boss' ,age:42},
+// {id:5,name:'Busquetos' , work:'Mr Vision',age:35},
 
-]
+// ]
 
 // let onSort=()=>{
 //     return students.sort((a,b)=>a.name.localeCompare(b.name))
@@ -148,5 +148,42 @@ const students=[
 //  console.log(Object.fromEntries(a));
 
 
+
+
+
+
+// var str='AVCCAVBDBACC';
+// let arr=[];
+
+
+// for (let i = 0; i < str.length; i++) {
+ 
+
+//     if (arr.includes(str[i])) {
+//         console.log(str[i]); break
+        
+//     }
+
+//     arr.push(str[i])
+
+ 
+    
+// }
+
+
+
+// for (let i = 0; i < 10; i++) {
+//      if (i===3) {
+//         break
+//      }
+//      console.log(i);
+// }
+
+
+var arr =[2,3,[3,4,[3,4]]] //19
+var str=['Fazliddin',['Shamsiddin',['Shahobiddin',['Rayhona']]]]
+
+// console.log(arr.flat(Infinity).reduce((a,b)=>a+ +b));  //nested arrayni bitta arrayga utkazish uchun arr.flat(Infinity) ishlatiladi;
+// console.log(str.flat(Infinity));
 
 
