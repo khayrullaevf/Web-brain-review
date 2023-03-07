@@ -103,3 +103,17 @@
 // let p2= new Player(1 , "Lionel Messi " ,'Andres Messi',35,"Argentina");
 
 // p2.callMe()
+
+
+
+console.log('Hello1');
+
+
+setTimeout(()=>{
+   
+    console.log("hello2");
+
+
+}, 1000)
+
+console.log("hello3");
