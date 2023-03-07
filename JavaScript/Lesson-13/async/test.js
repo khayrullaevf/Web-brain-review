@@ -6,11 +6,11 @@ let data={
 }
 
 
-const register=(pass)=>{
+const register=(name,pass)=>{
 
     return new Promise ((response , rejected)=>{
        setTimeout(() => {
-         if (data.password==pass) {
+         if (data.name==name&&data.password==pass) {
             response("LoggedIn")
             
          } else{
@@ -21,7 +21,7 @@ const register=(pass)=>{
     })
 }
 
-register('124').then((res)=>{
+register('Fazliddin1','123').then((res)=>{
     console.log(res);
 }).catch((rej)=>{
     console.log(rej);
