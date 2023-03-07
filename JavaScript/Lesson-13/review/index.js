@@ -22,8 +22,10 @@ let item=document.getElementById('clear')
     }
     
 
+    console.log("promise");
 
-    
+
+
 //  setTimeout(() => {
 // console.log(c);
     
