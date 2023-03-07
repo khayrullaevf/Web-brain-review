@@ -27,7 +27,9 @@
 
 
 
-// var str='2d1fr3hr5';
+var str='2d1fr3hr5';
+
+// console.log(str.match(/[0-9]/g).reduce((a,b)=>a+ +b,0));
 // str=str.split('')
 
 
@@ -46,18 +48,20 @@
 // console.log(total);
 
 
-const findSum=(str)=>{
-    var total=0;
+// const findSum=(str)=>{
+//     var total=0;
 
-for (let i = 0; i < str.length; i++) {
-     if (+str[i]==str[i]) {
-        total+=+str[i];
+// for (let i = 0; i < str.length; i++) {
+//      if (+str[i]==str[i]) {
+//         // total+=+str[i];
+//     total+=parseInt(str[i])
+
         
-     }
+//      }
      
-}
-console.log(total);
-}
+// }
+// console.log(total);
+// }
 
 
-findSum('3gws2kj5ewghioqr;;;;;;;;;;;;;5jdkbbaJKBD5') //20
+// findSum('3gws2kj5ewghioqr;;;;;;;;;;;;;5jdkbbaJKBD5') //20
