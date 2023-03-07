@@ -210,33 +210,33 @@
 
 // var nestedArr=[2,3,4,[3,4,[6,3,[2,4]]]]; ///31
 var arr=[2,5,3,4];
-// console.log(arr.map(v=>v**2));
-// console.log(arr.map(v=>[v**2]).flat(Infinity));
-// console.log(arr.map(v=>[v**2]).flat(Infinity));
-// console.log(arr.flatMap(v=>[v**2])); // map and flat both in flatMap();
- let newArr=[56,65]
- let obj={
-    id:1,
-    name:'Messi',
-    status:'GOAT',
-    addNew:function (age) {
+// // console.log(arr.map(v=>v**2));
+// // console.log(arr.map(v=>[v**2]).flat(Infinity));
+// // console.log(arr.map(v=>[v**2]).flat(Infinity));
+// // console.log(arr.flatMap(v=>[v**2])); // map and flat both in flatMap();
+//  let newArr=[56,65]
+//  let obj={
+//     id:1,
+//     name:'Messi',
+//     status:'GOAT',
+//     addNew:function (age) {
 
       
-      console.log(this.pro+'!  your age is '+this.year +'   your  age is '+age);
-    }
- }
+//       console.log(this.pro+'!  your age is '+this.year +'   your  age is '+age);
+//     }
+//  }
 
- let newObj={
-   pro:'The king',
-   year: 1985,
- }
+//  let newObj={
+//    pro:'The king',
+//    year: 1985,
+//  }
 
 
-//  let callingBind=obj.addNew.bind(newObj);
-//  callingBind(20)
-//  callingBind(48)
+// //  let callingBind=obj.addNew.bind(newObj);
+// //  callingBind(20)
+// //  callingBind(48)
 
-obj.addNew.bind(newObj)(34)
+// obj.addNew.bind(newObj)(34)
  
 
 
@@ -250,3 +250,18 @@ obj.addNew.bind(newObj)(34)
 // console.log(nestedArr.flat(Infinity)); //  bitta arrayga solib beradi;
 
 // console.log(nestedArr.flat(Infinity).reduce((a,b)=>a+ +b));
+
+var me={
+   name:'Fazliddin',
+   surname:'Khayrullaev'
+}
+
+//  for (let key in me) {
+//    console.log(me[key]);
+//  }
+
+let arr4 =['Hello','WBA',20]
+for (let i in arr4) {
+   console.log(i);
+   
+}
