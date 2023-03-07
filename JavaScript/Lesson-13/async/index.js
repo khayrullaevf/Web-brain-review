@@ -17,10 +17,16 @@ const register=(name,pasword)=>{
  return new Promise ((response, rejected)=>{
  
      if(data.name==name&&data.pasword==pasword){
+       setTimeout(() => {
         response('Logged  in')
- 
+         
+       }, 1000);
      } else{
-        rejected('Wrong data')
+        setTimeout(() => {
+            rejected('Wrong data')
+             
+           }, 1000);
+      
      }
 
 
