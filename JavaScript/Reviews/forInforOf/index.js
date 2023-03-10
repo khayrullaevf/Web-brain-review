@@ -127,38 +127,7 @@
     //     }
         
     //   }
-    const nestedArray = [
-        [
-          [1, 2],
-          [3, 4]
-        ],
-        [
-          [5, 6],
-          [7, 8]
-        ],
-        [9,10,
-            [11,
-            [12
-            ]
-            ],
-            [13,
-            [14,
-            [15,16
-            ],
-            [17,
-            [18,
-            [19,
-            [20,
-            [21,
-            ]
-            ]
-           ]
-           ]
-           ]
-           ]
-           ]
-           ]
-           ];
+  
 
 
     // for (let i = 0; i < nestedArray.length; i++) {
@@ -236,5 +205,56 @@
       
     //   printNestedArray(nestedArray);
 
+    const nestedArray = [
+      [
+        [1, 2],
+        [3, 4]
+      ],
+      [
+        [5, 6],
+        [7, 8]
+      ],
+      [9,10,
+          [11,
+          [12
+          ]
+          ],
+          [13,
+          [14,
+          [15,16
+          ],
+          [17,
+          [18,
+          [19,
+          [20,
+          [21,
+          ]
+          ]
+         ]
+         ]
+         ]
+         ]
+         ]
+         ]
+         ,[23,24,[25,[26,27,[28,29,[30]]]]]
+         ];
    
   
+
+    function accessNestedArray(array) {
+        let sum=0;
+      array.forEach(element => {
+       
+         if (Array.isArray(element)) {
+           sum+= accessNestedArray(element)
+         } else{
+          sum+=element;
+         }
+        }
+        );
+        return sum
+        
+      
+    }
+
+console.log(accessNestedArray(nestedArray));
