@@ -239,22 +239,28 @@
          ,[23,24,[25,[26,27,[28,29,[30]]]]]
          ];
    
+
+
+        //  console.log(nestedArray.flat(Infinity).reduce((a,b)=>a+ +b));
+
+
+
   
 
-    function accessNestedArray(array) {
-        let sum=0;
-      array.forEach(element => {
+//     function accessNestedArray(array) {
+//         let sum=0;
+//       array.forEach(element => {
        
-         if (Array.isArray(element)) {
-           sum+= accessNestedArray(element)
-         } else{
-          sum+=element;
-         }
-        }
-        );
-        return sum
+//          if (Array.isArray(element)) {
+//            sum+= accessNestedArray(element)
+//          } else{
+//           sum+=element;
+//          }
+//         }
+//         );
+//         return sum
         
       
-    }
+//     }
 
-console.log(accessNestedArray(nestedArray));
+// console.log(accessNestedArray(nestedArray));
