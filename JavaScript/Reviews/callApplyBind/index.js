@@ -95,6 +95,13 @@ let me ={
 
 }
 
+// console.log('surname' in me);
+for (const key in me) {
+  
+       console.log(`key :${key} , value:${me[key]}`); 
+    
+}
+
 let my={
     name:'Fazliddin',
     status:'Freelancer',
@@ -103,5 +110,5 @@ let my={
 
 
  const introYou=me.callMe.bind(my);
- introYou(20)
+//  introYou(20)
 // me.callMe.bind(my,20)();
