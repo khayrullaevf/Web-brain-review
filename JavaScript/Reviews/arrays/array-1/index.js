@@ -116,7 +116,19 @@ let arr2=[6,4,2,3,0,5,7,18,912,3,35,673,3,2,4345,332]
 
 let arr3=['p','Q' ,'N' ,'D' ,'A','c' ,'B']
 
-  
+
+// let newArr3=arr3.filter(letter=>{
+//   return letter!==letter.toLowerCase()
+// })
+// console.log(newArr3);
+// let newArr3=arr3.find((letter)=>{
+//   return letter!==letter.toLowerCase()
+// })
+// console.log(newArr3);
+let newArr3=arr3.findIndex((letter)=>{
+  return letter!==letter.toLowerCase()
+})
+console.log(newArr3);
 // let newArr2=arr2.map((val)=> {
 //    if (val<20) {
 //       console.log(val);
