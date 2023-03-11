@@ -74,8 +74,34 @@ var str ='Fazliddin'
 let nums=[2,3,[2,3,[2,3]]]
 
 let numbers=[2,5,3,5]
+// for (const i of numbers) {
+//     console.log(i);
+// }
+// console.log([...numbers, 6,7,8,9,10,true,undefined,null]);de 
 // console.log(numbers.map((val,index)=>val*2));
-console.log(numbers.flatMap(val=>[val*2]));
+// console.log(numbers.flatMap(val=>[val*2]));
 
 // console.log(newNums);
 // console.log(nums.flat(Infinity).reduce((a,b)=>a+  +b,0));
+
+
+let me ={
+    id:1,
+    surname:'Khayrullaev',
+    callMe:function(age){
+
+        console.log(`Hello! your name is ${this.name} ${me.surname} , your id is ${me.id} ,your are ${age} years old, your status is ${this.status}`);
+    }
+
+}
+
+let my={
+    name:'Fazliddin',
+    status:'Freelancer',
+}
+
+
+
+ const introYou=me.callMe.bind(my);
+ introYou(20)
+// me.callMe.bind(my,20)();
