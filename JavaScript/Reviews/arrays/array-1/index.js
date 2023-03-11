@@ -68,8 +68,17 @@
 
 
 let arr=['Fazliddin','Leo','Sheeran','Suarez'];
+let aRR=['Fazliddin','Leo','Sheeran','Suarez'];
+
+console.log(arr==aRR);
+
+let[f,l,sh,s]=arr
 
 
+// console.log(f); //Fazliddin
+// console.log(l);  //Leo
+// console.log(sh); //Sheeran
+// console.log(s);  //Suarez
 
 // for (let i = 0; i < arr.length; i++) {
 //    let result='';
@@ -149,7 +158,7 @@ for (let i = 0; i < numbers.length; i++) {
   
 }
 
-console.log(total);
+// console.log(total);
 
 
 
