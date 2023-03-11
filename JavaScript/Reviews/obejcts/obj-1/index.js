@@ -10,7 +10,55 @@ let me={
     }
 }
 
-me.myFunc('footbal')
+const{name,surname,age,status,my}=me
+// console.log(name);
+// console.log(surname);
+// console.log(age);
+// console.log(status);
+
+// myFunc.call(me,'football')
+
+
+const myFunc=me.myFunc;
+
+
+
+// me.myFunc('footbal')
+
+
+const people=[
+    {id:1, name:'Fazliddin', status:"IT"},
+    {id:2, name:'Dani', status:"Left-back"},
+    {id:3, name:'Pique', status:"Right-back"},
+    {id:4, name:'Aruojo', status:"Centre-back"},
+    {id:5, name:'Busquets', status:"Midfielder"},
+]
+
+
+const callPeople=people.map(({id,name,status}, index, array)=>{
+    
+    // console.log(status);
+   console.log(`id:${id}, name: ${name}, status: ${status}`);
+
+
+})
+
+
+
+
+
+
+
+
+
+
+// console.log(this);
+// console.log(this);
+// console.log(this);
+// console.log(this);
+// alert('Hi')
+// prompt(me.myFunc())
+// print('hello')
 // Object.freeze(me)
 // Object.seal(me)
 // me.nickname='Fazik';
