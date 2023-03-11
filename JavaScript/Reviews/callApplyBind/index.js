@@ -39,3 +39,22 @@ function onAdd(name,status) {
 // onAdd('CR7','Trash')
 
 
+
+
+
+
+var str='ACCCBDBBACC';
+//terminal=>B
+
+let arr=[];
+for (let i = 0; i < str.length; i++) {
+    
+    if(arr.includes(str[i])) {
+       console.log(str[i]); break;
+    }
+
+    arr.push(str[i]);
+    
+
+    
+}
