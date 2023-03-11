@@ -5,16 +5,18 @@ let me={
     surname:'Khayrullaev',
     age:20,
     status:'freelancer',
-  
+    myFunc:function(hobby){
+        console.log(`Hello!! My name is ${this.name} ${this.surname} , I'm   ${this.age} years old,  I like ${hobby}` );
+    }
 }
 
-
+me.myFunc('footbal')
 // Object.freeze(me)
-Object.seal(me)
-me.nickname='Fazik';
-me.age=21
-delete me.surname
-console.log(me);
+// Object.seal(me)
+// me.nickname='Fazik';
+// me.age=21
+// delete me.surname
+// console.log(me);
 
 // let leo=[['name','Leo'],['surname', 'Messi']]
 
