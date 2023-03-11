@@ -91,6 +91,33 @@ let arr=['Fazliddin','Leo','Sheeran','Suarez'];
 let arr2=[6,4,2,3,0,5,7,18,912,3,35,673,3,2,4345,332]
 let arr3=['p','Q' ,'N' ,'D' ,'A','c' ,'B']
 
+  
+// let newArr2=arr2.map((val)=> {
+//    if (val<20) {
+//       console.log(val);
+//    } else{
+//     return false
+//    }
+
+// })
+
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.unshift(12)
+numbers.unshift(13)
+numbers.unshift(14)
+numbers.shift()
+console.log(numbers);
+
+// const filteredNumbers = numbers.filter(function(num) {
+//   return num % 2 === 0;
+// });
+
+// console.log(filteredNumbers);
+
+
+// let newArr2=arr2.filter(val=>val<20)
+// console.log(newArr2);
 //  console.log(arr3.join(' '));
 
 
@@ -125,12 +152,17 @@ arr3.slice(0,4)
 let fruits=['olma', 'behi' ,'anor']
 
 
-fruits.pop()
+// fruits.pop()
 
-fruits.push('limon' , 'cherry')
+// fruits.push('limon' , 'cherry')
+
+// let newFruits=fruits.map((item)=>{
+//     return 'Hi'
+// })
 
 
-console.log(fruits);
+// console.log(fruits);
+// console.log(newFruits);
 // let str='Fazliddin'
 // let result=''
 
@@ -154,3 +186,33 @@ console.log(fruits);
 // }
 
 // console.log(fruits);
+
+
+
+// function toCamelCase(str) {
+//   // Replace all dashes and underscores with a space
+//   str = str.replace(/[-_]/g, ' ');
+
+//   // Split the words into an array
+//   var words = str.split(' ');
+
+  // Combine the words into camel case
+  // The first word is lowercase unless it is capitalized in the original string
+  // The remaining words are always capitalized
+//   var camelCaseWords = [words[0].toLowerCase()];
+//   for (var i = 1; i < words.length; i++) {
+//     camelCaseWords.push(words[i].charAt(0).toUpperCase() + words[i].slice(1).toLowerCase());
+//   }
+
+//   // Join the words together into a single string
+//   var camelCaseStr = camelCaseWords.join('');
+
+//   return camelCaseStr;
+// }
+
+// console.log(toCamelCase('Fazliddin-khayrullaev'));
+
+// function toCamelCase(str){
+//   return str.replace(/[-_](.)/g, (_, c) => c.toUpperCase());
+// }
+// console.log(toCamelCase('hda-HJH-ksj'));
