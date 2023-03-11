@@ -43,18 +43,39 @@ function onAdd(name,status) {
 
 
 
-var str='ACCCBDBBACC';
+// var str='ACCCBDBBACC';
 //terminal=>B
 
-let arr=[];
-for (let i = 0; i < str.length; i++) {
-    
-    if(arr.includes(str[i])) {
-       console.log(str[i]); break;
-    }
+var str ='Fazliddin'
 
-    arr.push(str[i]);
+// let str2=''
+// for (let i = str.length-1; i >=0; i--) {
+//    str2+=str[i]
+    
+// }
+// console.log(str2);
+
+// let arr=[];
+// for (let i = 0; i < str.length; i++) {
+    
+//     if(arr.includes(str[i])) {
+//        console.log(str[i]); break;
+//     }
+
+//     arr.push(str[i]);
     
 
     
-}
+// }
+
+
+
+
+let nums=[2,3,[2,3,[2,3]]]
+
+let numbers=[2,5,3,5]
+// console.log(numbers.map((val,index)=>val*2));
+console.log(numbers.flatMap(val=>[val*2]));
+
+// console.log(newNums);
+// console.log(nums.flat(Infinity).reduce((a,b)=>a+  +b,0));
