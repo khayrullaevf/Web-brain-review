@@ -26,7 +26,7 @@ const myFunc=me.myFunc;
 // me.myFunc('footbal')
 
 
-const people=[
+var people=[
     {id:1, name:'Fazliddin', status:"IT"},
     {id:2, name:'Dani', status:"Left-back"},
     {id:3, name:'Pique', status:"Right-back"},
@@ -35,10 +35,36 @@ const people=[
 ]
 
 
+function onAdd(name,status) {
+   let user={
+    id:people.length+1,
+    name:name,
+    status:status,
+   }
+   people=[...people, user];
+   console.log(people);
+    
+}
+// onAdd('CR7', 'trash')
+// onAdd('Messi', 'GOAT')
+// onAdd('Iniest', 'Magician')
+
+
+
+
+
+
+function onDelete(iD) {
+    
+    const updatedPeople=people.filter(({id,name,status})=>id!==iD)
+    console.log(updatedPeople);
+
+}
+// onDelete(2)
 const callPeople=people.map(({id,name,status}, index, array)=>{
     
     // console.log(status);
-   console.log(`id:${id}, name: ${name}, status: ${status}`);
+//    console.log(`id:${id}, name: ${name}, status: ${status}`);
 
 
 })
