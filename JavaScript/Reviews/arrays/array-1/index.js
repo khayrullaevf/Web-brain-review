@@ -89,6 +89,31 @@ let arr=['Fazliddin','Leo','Sheeran','Suarez'];
 
 
 let arr2=[6,4,2,3,0,5,7,18,912,3,35,673,3,2,4345,332]
+
+
+// let newArr22=arr2.filter((val,index,arr)=>{
+//   return val<50&&val>10
+// })
+
+// console.log(newArr22);
+
+// let newArr22=arr2.filter(val=> val<50&&val>10)
+//  console.log(newArr22);
+
+
+
+// let newArr22=''
+// var newArr2=arr2.map((val,index,arr)=>{
+//  if (val<50) {
+//   // console.log(val);
+//   newArr22+=val
+ 
+  
+//  }
+   
+// })
+// console.log(newArr22.split(''));
+
 let arr3=['p','Q' ,'N' ,'D' ,'A','c' ,'B']
 
   
@@ -107,7 +132,7 @@ numbers.unshift(12)
 numbers.unshift(13)
 numbers.unshift(14)
 numbers.shift()
-console.log(numbers);
+// console.log(numbers);
 
 // const filteredNumbers = numbers.filter(function(num) {
 //   return num % 2 === 0;
@@ -151,6 +176,21 @@ arr3.slice(0,4)
 
 let fruits=['olma', 'behi' ,'anor']
 
+
+var newFruits=fruits.map((val,index,arr)=>{
+  // console.log(val); //fruits[i]
+  // console.log(index); // i
+  // console.log(arr);  //fruits
+  return 'Meva'
+})
+// console.log(newFruits);
+
+for (let i = 0; i < fruits.length; i++) {
+  // console.log(i);
+  // console.log(fruits[i]);
+  // console.log(fruits);
+  
+}
 
 // fruits.pop()
 
