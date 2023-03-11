@@ -128,7 +128,7 @@ let arr3=['p','Q' ,'N' ,'D' ,'A','c' ,'B']
 let newArr3=arr3.findIndex((letter)=>{
   return letter!==letter.toLowerCase()
 })
-console.log(newArr3);
+// console.log(newArr3);
 // let newArr2=arr2.map((val)=> {
 //    if (val<20) {
 //       console.log(val);
@@ -140,10 +140,31 @@ console.log(newArr3);
 
 const numbers = [1, 2, 3, 4, 5];
 
-numbers.unshift(12)
-numbers.unshift(13)
-numbers.unshift(14)
-numbers.shift()
+const nums=[1,4,5,6,4]
+
+
+
+
+
+
+
+
+
+// function findTotal(arr) {
+//   const total=arr.reduce((a,b)=>{
+//     return a+ +b;
+//   })
+  
+//   console.log(total);
+// }
+
+// findTotal(numbers)
+// findTotal(nums)
+
+// numbers.unshift(12)
+// numbers.unshift(13)
+// numbers.unshift(14)
+// numbers.shift()
 // console.log(numbers);
 
 // const filteredNumbers = numbers.filter(function(num) {
@@ -188,6 +209,15 @@ arr3.slice(0,4)
 
 let fruits=['olma', 'behi' ,'anor']
 
+
+function deleteFruit(friutsList,deleteFriut) {
+   let newFruits=friutsList.filter((fruitName)=>{
+    return fruitName!==deleteFriut
+   })
+   console.log(newFruits);
+}
+
+// deleteFruit( fruits,'olma')
 
 var newFruits=fruits.map((val,index,arr)=>{
   // console.log(val); //fruits[i]
