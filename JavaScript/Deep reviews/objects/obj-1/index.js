@@ -81,3 +81,20 @@ function onDelete(Id) {
 
 //     console.log(`${id}) ${name} ${surname} , your status is ${status}`);
 // })
+
+
+
+let str='A1!1C!ABDBACC'
+let arr=[];
+
+
+for (let i = 0; i < str.length; i++) {
+    // console.log(arr, str[i]);
+    // console.log(arr.includes(str[i]));
+    if (arr.includes(str[i])) {
+        console.log(str[i]); break;
+    }
+    
+    arr.push(str[i])
+   
+}
