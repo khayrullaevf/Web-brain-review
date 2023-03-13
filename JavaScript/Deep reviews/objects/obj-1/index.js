@@ -82,19 +82,40 @@ function onDelete(Id) {
 //     console.log(`${id}) ${name} ${surname} , your status is ${status}`);
 // })
 
+let arr =[2,3,[2,3,[2,3,[2,3,[2,3,[2,3,[2,3,[2,3,[2,3]]]]]]]]]
 
+// let newArr=arr.flat(Infinity).reduce((a,b)=>a+ +b,0)
 
-let str='A1!1C!ABDBACC'
-let arr=[];
+// console.log(newArr);
 
+function findSum(arrs) {
+    var sum=0;
+   arrs.forEach(value => {
+        if (Array.isArray(value)) {
+            sum+=findSum(value)
+        } else{
+            sum+=value
+               
+        }
+     });
 
-for (let i = 0; i < str.length; i++) {
-    // console.log(arr, str[i]);
-    // console.log(arr.includes(str[i]));
-    if (arr.includes(str[i])) {
-        console.log(str[i]); break;
-    }
-    
-    arr.push(str[i])
-   
+     return sum
+  
+
 }
+console.log(findSum(arr));
+// findSum(arr)
+// let str='A1!1C!ABDBACC'
+// let arr=[];
+
+
+// for (let i = 0; i < str.length; i++) {
+//     // console.log(arr, str[i]);
+//     // console.log(arr.includes(str[i]));
+//     if (arr.includes(str[i])) {
+//         console.log(str[i]); break;
+//     }
+    
+//     arr.push(str[i])
+   
+// }
