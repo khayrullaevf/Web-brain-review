@@ -37,7 +37,47 @@ const people=[
 ]
 
 
-const players=people.map(({id,name,surname,status})=>{
+function onAdd(name,surname,status) {
+    let player={
+        id:people.length+1,
+        name:name,
+        surname:surname,
+        status:status,
+    }
+    console.log([...people,player]);
+}
+// onAdd('sergio','Busquets','Maestro')
 
-    console.log(`${id}) ${name} ${surname} , your status is ${status}`);
-})
+
+
+
+
+
+
+
+function onSort(array) {
+    const sortedPeople=array.sort((a,b)=>b.id-a.id)
+    console.log(sortedPeople);
+}
+
+// onSort(people)
+
+
+
+
+
+function onDelete(Id) {
+
+    const updatedPeople=people.filter(({id})=>{
+        return id!==Id
+    })
+    console.log(updatedPeople);
+}
+
+// onDelete(2)
+// onDelete(4)
+
+// const players=people.map(({id,name,surname,status})=>{
+
+//     console.log(`${id}) ${name} ${surname} , your status is ${status}`);
+// })
