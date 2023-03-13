@@ -23,7 +23,7 @@ const me2={
     age:20,
 }
 // const {dad,age}=me2
-me.hiMe.bind(me2)();
+// me.hiMe.bind(me2)();
 // console.log(name);
 // console.log(dad);
 // console.log(age);
@@ -36,6 +36,21 @@ const people=[
     {id:3,name:"Gerard",surname:'Pique', status:'Mr President'},
     {id:4,name:"Ronald",surname:'Araujo', status:'Gorilla'},
 ]
+
+function onSearchName(search) {
+  for (let i = 0; i < people.length; i++) {
+    if (people[i].name.includes(search.toLowerCase())||people[i].name.includes(search.toUpperCase())) {
+        console.log(people[i]);
+    }
+    
+  }
+
+    
+}
+
+onSearchName('g')
+
+
 
 
 function onAdd(name,surname,status) {
