@@ -10,6 +10,23 @@ var people=[
 ]
 
 
+let goat={
+    id:10,
+    name:'Leo',
+    surname:'Messi'
+,}
+
+
+goat.age=36;
+
+// console.log(goat);
+// console.log(Object.keys(goat).findIndex(val=>val=='id'));
+// console.log(Object.values(goat).findIndex(val=>val=='Leo'));
+
+console.log(Object.entries(goat).flat(Infinity).filter((val)=>{
+   return val!=='Messi'&&val!=='age'&&val!==36&&val!==10
+}));
+
 
 
 
@@ -71,8 +88,34 @@ function onAdd(name,status) {
 
 
 
-let nums=[2,3,[2,3,[2,3,[1,4,[2,3]]]]]
-let total=0
+let nums=[2,3,[2,3,[2,3,[1,4,[2,3,[2,3,[4,1,2]]]]]]]
+
+
+function findTotal(array) {
+    let total=0;
+  
+    array.forEach(element => {
+        if (Array.isArray(element)) {
+            total+=findTotal(element)
+        
+        }else{
+            total+=element;
+        }
+    })
+
+    return total
+
+}
+
+//  console.log(findTotal(nums));
+
+
+
+
+
+
+
+
 
 
 //  for (let i = 0; i < nums.length; i++) {
@@ -190,3 +233,16 @@ for (let i = 0; i < str.length; i++) {
 
 // console.log(str.match(/[0-9]/g).reduce((a,b)=>a+ +b,0));
 
+// function sumNestedArray(array) {
+//     let sum = 0;
+//     array.forEach(element => {
+//       if (Array.isArray(element)) {
+//         sum += sumNestedArray(element);
+//       } else {
+//         sum += element;
+//       }
+//     });
+//     return sum;
+//   }
+
+//   console.log(sumNestedArray(nums));
