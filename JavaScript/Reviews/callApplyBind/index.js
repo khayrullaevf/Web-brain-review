@@ -46,7 +46,7 @@ function onAdd(name,status) {
 // var str='ACCCBDBBACC';
 //terminal=>B
 
-var str ='Fazliddin'
+// var str ='Fazliddin'
 
 // let str2=''
 // for (let i = str.length-1; i >=0; i--) {
@@ -98,7 +98,7 @@ let me ={
 // console.log('surname' in me);
 for (const key in me) {
   
-       console.log(`key :${key} , value:${me[key]}`); 
+    //    console.log(`key :${key} , value:${me[key]}`); 
     
 }
 
@@ -112,3 +112,28 @@ let my={
  const introYou=me.callMe.bind(my);
 //  introYou(20)
 // me.callMe.bind(my,20)();
+
+
+// let arr=[1,2,3,4];
+
+// for (const key of arr) {
+//     console.log(key);
+// }
+
+let str='F4az1lid2din3'
+// for (const val in str) {
+//     console.log(val);
+// }
+
+
+let sum=0;
+for (let i = 0; i < str.length; i++) {
+    if (str[i]==+str[i]) {
+         sum+=+str[i]
+
+    }
+}
+console.log(sum) ;
+
+
+// console.log(str.match(/[0-9]/g).reduce((a,b)=>a+ +b,0));
