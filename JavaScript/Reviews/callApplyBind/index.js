@@ -1,5 +1,22 @@
 
 
+// function checkPrime(num){
+//    newNUm= (num**num)+num+41
+//    console.log(`${newNUm} is Prime`);
+// }
+
+// checkPrime(2)
+
+
+
+
+
+
+
+
+
+
+
 
 var people=[
     {id:1, name:'Fazliddin', status:"IT"},
@@ -13,19 +30,25 @@ var people=[
 let goat={
     id:10,
     name:'Leo',
-    surname:'Messi'
+    surname:'Messi',
+    helloGoat:function(){
+        console.log(`Hello  ${this.name} ${this.surname}`);
+    }
 ,}
+ goat.helloGoat()
 
-
-goat.age=36;
+//   Object.freeze(goat)
+Object.seal(goat)
+// goat.age=36;
+// goat.name='Lionel'
 
 // console.log(goat);
 // console.log(Object.keys(goat).findIndex(val=>val=='id'));
 // console.log(Object.values(goat).findIndex(val=>val=='Leo'));
 
-console.log(Object.entries(goat).flat(Infinity).filter((val)=>{
-   return val!=='Messi'&&val!=='age'&&val!==36&&val!==10
-}));
+// console.log(Object.entries(goat).flat(Infinity).filter((val)=>{
+//    return val!=='Messi'&&val!=='age'&&val!==36&&val!==10
+// }));
 
 
 
@@ -44,7 +67,8 @@ function onAdd(name,status) {
     let user={
         id:people.length+1,
         name:name,
-        status:status
+        status:status,
+
     }
 
   people=[...people, user]
