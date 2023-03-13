@@ -13,16 +13,17 @@ const me={
     }
 }
 
+// me.hiMe.call(me2);
 // var name=me.name;
 // var surname=me.surname;
-const{name,surname}=me;
+// const{name,surname}=me;
 
 const me2={
     dad:'Hasan ogli',
     age:20,
 }
-const {dad,age}=me2
-// me.hiMe.call(me2);
+// const {dad,age}=me2
+me.hiMe.bind(me2)();
 // console.log(name);
 // console.log(dad);
 // console.log(age);
@@ -83,6 +84,9 @@ function onDelete(Id) {
 // })
 
 let arr =[2,3,[2,3,[2,3,[2,3,[2,3,[2,3,[2,3,[2,3,[2,3]]]]]]]]]
+// console.log(nums.map(val=>[val*2]));
+// const nonEmptyArrays = arr.flatMap(array => array.length ? array : []);
+// console.log(nonEmptyArrays);
 
 // let newArr=arr.flat(Infinity).reduce((a,b)=>a+ +b,0)
 
@@ -103,7 +107,7 @@ function findSum(arrs) {
   
 
 }
-console.log(findSum(arr));
+// console.log(findSum(arr));
 // findSum(arr)
 // let str='A1!1C!ABDBACC'
 // let arr=[];
@@ -119,3 +123,19 @@ console.log(findSum(arr));
 //     arr.push(str[i])
    
 // }
+
+
+
+let nums=[2,3,4,5]
+
+// nums=[...nums, 'hello', true, undefined];
+// for (const i of nums) {
+//     console.log(i);
+// }
+
+
+// console.log(nums.map(val=>[val*2]));
+// console.log(nums.map(val=>[val*2]).flat(Infinity));
+// console.log(nums.flatMap(val=>[val**2]));
+
+
