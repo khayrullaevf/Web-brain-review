@@ -71,7 +71,59 @@ function onAdd(name,status) {
 
 
 
-let nums=[2,3,[2,3,[2,3]]]
+let nums=[2,3,[2,3,[2,3,[1,4,[2,3]]]]]
+let total=0
+
+
+//  for (let i = 0; i < nums.length; i++) {
+//    const inner1=nums[i]
+//    if (Array.isArray(inner1)) {
+//       for (let j = 0; j < inner1.length; j++) {
+//         const inner2=inner1[i];
+//         if (Array.isArray(inner2)) {
+//             for (let k = 0; k < inner2.length; k++) {
+//                 // sums+=inner2[k]
+//                 const inner3=inner2[k]
+//                 if (Array.isArray(inner3)) {
+//                      for (let l = 0; l < inner3.length; l++) {
+                        
+//                         // //  console.log(inner3[l]); 
+//                         //  total+=+inner3[l]
+//                         //  console.log(total); 
+//                           const inner4=inner3[l]
+//                           if (Array.isArray(inner4)) {
+//                              for (let m = 0; m < inner4.length; m++) {
+//                                 console.log(inner4[m]);
+//                                 total+=inner4[m]
+                                
+//                              }
+//                           } else{
+//                             console.log(inner4);
+//                           }
+//                      }
+//                 } else{
+//                     // console.log(inner3);
+//                 }
+//             }
+//         } 
+//         else{
+//             // console.log(inner2);
+//         }
+//         }
+//    }
+//    else{
+//     // console.log(inner1);
+//    }
+    
+//  }
+//  console.log(total);
+
+
+
+
+
+
+
 
 let numbers=[2,5,3,5]
 // for (const i of numbers) {
@@ -133,7 +185,8 @@ for (let i = 0; i < str.length; i++) {
 
     }
 }
-console.log(sum) ;
+// console.log(sum) ;
 
 
 // console.log(str.match(/[0-9]/g).reduce((a,b)=>a+ +b,0));
+
