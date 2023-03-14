@@ -1,18 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import ME from './Me';
+// import './me.css' ;
+
 // import './index.css';
-import './myapp.css';
+// import './myapp.css';
 
 // import App from './App';
-import Me from './myapp.jsx';
+// import Me from './myapp.jsx';
+// import ME from './Me';
 
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <ME/>
     {/* <App /> */}
-    <Me/>
+    
    
   </React.StrictMode>
 );
