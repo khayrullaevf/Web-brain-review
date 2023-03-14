@@ -26,3 +26,5 @@ function User(name){
 let user=new User('Abror')
 
 console.log(user.name);
+console.log(user.name);
+console.log(user.name);
